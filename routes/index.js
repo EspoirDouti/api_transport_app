@@ -7,7 +7,7 @@ var router = express.Router();
 // });
 
 router.get('/',function(req, res, next){
-  res.send('Test get api');
+  res.send('COORDINATION FRONTEND BACKEND API');
 })
 
 module.exports = router;

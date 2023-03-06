@@ -5,7 +5,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/TransportApp', {useNewUrlParser: true, useUnifiedTopology: true});
+// mongoose.connect('mongodb://localhost:27017/TransportApp', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://espoir:espoir123456@cluster0.gnijhag.mongodb.net/TransportApp?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
+
 
 db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
